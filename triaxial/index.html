@@ -77,6 +77,23 @@ table tr:nth-child(even) td{background:#F9FAFB}
   
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style id="minimal-fix-v5">
+/* Sticky para navbar específicos (NO header.hero) */
+.topbar, .navbar, .header-top, .main-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1010 !important;
+}
+header.hero, .hero { position: relative !important; }
+/* Dropdowns por encima del hero */
+.dd, .has-dd .dd, .nav-item .dd {
+  z-index: 1100 !important;
+}
+/* Leaflet contained */
+.leaflet-pane { z-index: 400 !important; }
+.leaflet-control { z-index: 800 !important; }
+.leaflet-container { z-index: 1 !important; }
+</style>
 </head><body>
 
 <div class="topbar">
@@ -104,7 +121,7 @@ table tr:nth-child(even) td{background:#F9FAFB}
 
 
 
-<section class="block"><div class="container"><h2>Process overview</h2><div>The triaxial cell in our Dublin facility is a stiff loading frame capable of applying confining pressures up to 2 MPa, which covers the stress levels you'd encounter at basement depths in the Grand Canal Dock area or for deep pile caps in the Docklands. The setup includes a digital pressure-volume controller for precise back-pressure saturation, and local LVDTs mounted directly on the specimen to eliminate bedding errors and machine compliance. For Dublin boulder clay, we typically run consolidated-undrained (CU) tests with pore pressure measurement, because that gives you both total and effective stress parameters in one go. You get the Mohr-Coulomb envelope, the secant modulus at 50% strain, and the Skempton pore pressure coefficient at failure. When the project requires deformation parameters for <a href="/deep-excavations">deep-excavations</a>—say, a cut-and-cover tunnel or a multi-level basement near the Dodder—we run small-strain measurements with bender elements to capture Gmax, the maximum shear modulus, before the sample even sees shear. This level of detail matters in Dublin, where the till can be fissured and its stiffness depends heavily on the confining stress and the presence of occasional gravel lenses.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><img src="/img/ensayo-triaxial-5.webp" alt="Triaxial Testing for Soil Strength in Dublin" loading="lazy" style="width:100%;max-height:210px;object-fit:cover;display:block"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Dublin</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Local context</h2><p>Comparing two Dublin sites shows why the triaxial test is non-negotiable. In Blackrock, the ground is typically a stiff, sandy gravelly clay with high effective friction angles—often above 33 degrees—and low compressibility. A shallow pad footing here works fine with conservative bearing pressures. But move north of the Liffey to the alluvial deposits near the Tolka River, and you hit soft silty clays with organic content, where the undrained shear strength can drop below 40 kPa. If you rely on a correlation from SPT blow counts instead of direct triaxial measurement, you risk overestimating the bearing capacity by a factor of two. That's how a routine three-storey apartment block ends up with differential settlement cracks in the first winter. The triaxial test quantifies the strength anisotropy too: the undrained strength ratio Su/σ'v varies with stress history, and in Dublin's over-consolidated till, it's not the textbook 0.22 for normally consolidated clays. We have measured values up to 0.45 in samples extracted from the upper crust of the till, which changes the whole slope stability calculation for an <a data-interlink="1" href="/excavation-monitoring">excavation-monitoring</a> plan.</p></div></section>
+<section class="block"><div class="container"><h2>Process overview</h2><div>The triaxial cell in our Dublin facility is a stiff loading frame capable of applying confining pressures up to 2 MPa, which covers the stress levels you'd encounter at basement depths in the Grand Canal Dock area or for deep pile caps in the Docklands. The setup includes a digital pressure-volume controller for precise back-pressure saturation, and local LVDTs mounted directly on the specimen to eliminate bedding errors and machine compliance. For Dublin boulder clay, we typically run consolidated-undrained (CU) tests with pore pressure measurement, because that gives you both total and effective stress parameters in one go. You get the Mohr-Coulomb envelope, the secant modulus at 50% strain, and the Skempton pore pressure coefficient at failure. When the project requires deformation parameters for <a href="/deep-excavations">deep-excavations</a>—say, a cut-and-cover tunnel or a multi-level basement near the Dodder—we run small-strain measurements with bender elements to capture Gmax, the maximum shear modulus, before the sample even sees shear. This level of detail matters in Dublin, where the till can be fissured and its stiffness depends heavily on the confining stress and the presence of occasional gravel lenses.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><img src="/img/ensayo-triaxial-1.webp" alt="Triaxial Testing for Soil Strength in Dublin" loading="lazy" style="width:100%;max-height:210px;object-fit:cover;display:block"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Dublin</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Local context</h2><p>Comparing two Dublin sites shows why the triaxial test is non-negotiable. In Blackrock, the ground is typically a stiff, sandy gravelly clay with high effective friction angles—often above 33 degrees—and low compressibility. A shallow pad footing here works fine with conservative bearing pressures. But move north of the Liffey to the alluvial deposits near the Tolka River, and you hit soft silty clays with organic content, where the undrained shear strength can drop below 40 kPa. If you rely on a correlation from SPT blow counts instead of direct triaxial measurement, you risk overestimating the bearing capacity by a factor of two. That's how a routine three-storey apartment block ends up with differential settlement cracks in the first winter. The triaxial test quantifies the strength anisotropy too: the undrained strength ratio Su/σ'v varies with stress history, and in Dublin's over-consolidated till, it's not the textbook 0.22 for normally consolidated clays. We have measured values up to 0.45 in samples extracted from the upper crust of the till, which changes the whole slope stability calculation for an <a data-interlink="1" href="/excavation-monitoring">excavation-monitoring</a> plan.</p></div></section>
     <section class="block mid-cta-0e0e-0e0e" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#EA580C15,#EA580C08);border-left:4px solid #EA580C;padding:1.6rem 1.8rem;border-radius:8px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
@@ -132,12 +149,13 @@ table tr:nth-child(even) td{background:#F9FAFB}
         <link rel="stylesheet" href="/css/leaflet-0e0e.css">
         <script src="/js/leaflet-0e0e.js"></script>
         <script>
-        (function(){
+
+(function(){
           var m=L.map("map_a877e6",{zoomControl:true,attributionControl:true}).setView([53.3494,-6.2606],11);
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
           }).addTo(m);
-          L.marker([53.3494,-6.2606]).addTo(m).bindPopup("Dublin");
+          L.marker([53.3494,-6.2606],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(m).bindPopup("Dublin");
         })();
         </script>
         <div style="margin-top:.5rem;font-size:.78rem;color:#888;text-align:center">

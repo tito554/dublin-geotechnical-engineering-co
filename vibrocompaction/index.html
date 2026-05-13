@@ -77,6 +77,23 @@ table tr:nth-child(even) td{background:#F9FAFB}
   
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style id="minimal-fix-v5">
+/* Sticky para navbar específicos (NO header.hero) */
+.topbar, .navbar, .header-top, .main-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1010 !important;
+}
+header.hero, .hero { position: relative !important; }
+/* Dropdowns por encima del hero */
+.dd, .has-dd .dd, .nav-item .dd {
+  z-index: 1100 !important;
+}
+/* Leaflet contained */
+.leaflet-pane { z-index: 400 !important; }
+.leaflet-control { z-index: 800 !important; }
+.leaflet-container { z-index: 1 !important; }
+</style>
 </head><body>
 
 <div class="topbar">
@@ -90,7 +107,7 @@ table tr:nth-child(even) td{background:#F9FAFB}
 </div>
 
 <header class="hero"><div class="hero-inner">
-    <div class="crumb-0e0e-0e0e"><a href="/">Home</a> › <span>Ground improvement</span> › <span>Vibrocompaction Design for Dublin's Glacial Soils</span></div>
+    <div class="crumb-0e0e-0e0e"><a href="/">Home</a> › <span>Improvement</span> › <span>Vibrocompaction Design for Dublin's Glacial Soils</span></div>
     <h1>Vibrocompaction Design for Dublin's Glacial Soils</h1>
     <p class="tagline">Site investigations you can build on.</p>
     <a class="hero-cta" href="#main-content">LEARN MORE</a>
@@ -104,7 +121,7 @@ table tr:nth-child(even) td{background:#F9FAFB}
 
 
 
-<section class="block"><div class="container"><h2>Process overview</h2><div>Dublin sits at roughly 20 metres above sea level, but its subsurface tells a different story: post-glacial alluvium, Irish Sea till, and pockets of loose limestone-derived gravels that can settle unevenly under load. With nearly 1.5 million people in the Greater Dublin Area, the pressure to build on marginal land has grown sharply—warehouses near Clondalkin, apartment blocks in Docklands, and school extensions in Tallaght all encounter these variable deposits. Vibrocompaction design in this context means translating site-specific CPT logs into a grid spacing that guarantees a relative density above 70 percent. We specify the vibrator power—usually 130 to 180 kW for Dublin's granular overburden—and the lift thickness based on grain-size curves from <a href="/grain-size">grain size testing</a> performed in our ISO 17025-accredited lab. The design also accounts for the water table, which in Dublin often sits within 2 metres of ground surface, affecting both the effectiveness of the vibrator and the post-treatment settlement timeline. We've found that for silty sands with fines content below 15 percent, a triangular grid at 2.5-metre centres delivers consistent densification; above that threshold, we tighten the spacing or switch to <a href="/stone-columns">stone columns</a> as a complementary ground improvement technique.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><img src="/img/vibrocompactacion-1.webp" alt="Vibrocompaction Design for Dublin's Glacial Soils" loading="lazy" style="width:100%;max-height:210px;object-fit:cover;display:block"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Dublin</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Local context</h2><p>A warehouse extension in Ballymount was designed with shallow pad footings on what the preliminary boreholes described as 'medium dense gravel'. During excavation, the contractor uncovered a 3-metre-thick lens of loose silty sand right under the footprint—completely missed by the original investigation. The structural engineer called us on a Thursday afternoon; the pour was scheduled for the following Tuesday. We mobilised a depth vibrator that weekend and treated the zone with a tight 2-metre triangular grid, completing six compaction points to 12 metres depth. Post-treatment CPTs confirmed the tip resistance had tripled, and the footings were poured on schedule. This scenario repeats itself across Dublin: glacial depositional environments create abrupt lateral changes that only in-situ densification can address without redesigning the entire foundation system. Skipping a targeted ground investigation before vibrocompaction design risks leaving untreated lenses that will settle differentially under load, cracking partition walls and jamming doors within the first year of occupancy.</p></div></section>
+<section class="block"><div class="container"><h2>Process overview</h2><div>Dublin sits at roughly 20 metres above sea level, but its subsurface tells a different story: post-glacial alluvium, Irish Sea till, and pockets of loose limestone-derived gravels that can settle unevenly under load. With nearly 1.5 million people in the Greater Dublin Area, the pressure to build on marginal land has grown sharply—warehouses near Clondalkin, apartment blocks in Docklands, and school extensions in Tallaght all encounter these variable deposits. Vibrocompaction design in this context means translating site-specific CPT logs into a grid spacing that guarantees a relative density above 70 percent. We specify the vibrator power—usually 130 to 180 kW for Dublin's granular overburden—and the lift thickness based on grain-size curves from <a href="/grain-size">grain size testing</a> performed in our ISO 17025-accredited lab. The design also accounts for the water table, which in Dublin often sits within 2 metres of ground surface, affecting both the effectiveness of the vibrator and the post-treatment settlement timeline. We've found that for silty sands with fines content below 15 percent, a triangular grid at 2.5-metre centres delivers consistent densification; above that threshold, we tighten the spacing or switch to <a href="/stone-columns">stone columns</a> as a complementary Improvement technique.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><img src="/img/vibrocompactacion-1.webp" alt="Vibrocompaction Design for Dublin's Glacial Soils" loading="lazy" style="width:100%;max-height:210px;object-fit:cover;display:block"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Dublin</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Local context</h2><p>A warehouse extension in Ballymount was designed with shallow pad footings on what the preliminary boreholes described as 'medium dense gravel'. During excavation, the contractor uncovered a 3-metre-thick lens of loose silty sand right under the footprint—completely missed by the original investigation. The structural engineer called us on a Thursday afternoon; the pour was scheduled for the following Tuesday. We mobilised a depth vibrator that weekend and treated the zone with a tight 2-metre triangular grid, completing six compaction points to 12 metres depth. Post-treatment CPTs confirmed the tip resistance had tripled, and the footings were poured on schedule. This scenario repeats itself across Dublin: glacial depositional environments create abrupt lateral changes that only in-situ densification can address without redesigning the entire foundation system. Skipping a targeted ground investigation before vibrocompaction design risks leaving untreated lenses that will settle differentially under load, cracking partition walls and jamming doors within the first year of occupancy.</p></div></section>
     <section class="block mid-cta-0e0e-0e0e" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#EA580C15,#EA580C08);border-left:4px solid #EA580C;padding:1.6rem 1.8rem;border-radius:8px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
@@ -132,12 +149,13 @@ table tr:nth-child(even) td{background:#F9FAFB}
         <link rel="stylesheet" href="/css/leaflet-0e0e.css">
         <script src="/js/leaflet-0e0e.js"></script>
         <script>
-        (function(){
+
+(function(){
           var m=L.map("map_a877e6",{zoomControl:true,attributionControl:true}).setView([53.3494,-6.2606],11);
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
           }).addTo(m);
-          L.marker([53.3494,-6.2606]).addTo(m).bindPopup("Dublin");
+          L.marker([53.3494,-6.2606],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(m).bindPopup("Dublin");
         })();
         </script>
         <div style="margin-top:.5rem;font-size:.78rem;color:#888;text-align:center">

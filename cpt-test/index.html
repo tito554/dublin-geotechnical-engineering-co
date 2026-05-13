@@ -78,6 +78,23 @@ table tr:nth-child(even) td{background:#F9FAFB}
   
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<style id="minimal-fix-v5">
+/* Sticky para navbar específicos (NO header.hero) */
+.topbar, .navbar, .header-top, .main-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1010 !important;
+}
+header.hero, .hero { position: relative !important; }
+/* Dropdowns por encima del hero */
+.dd, .has-dd .dd, .nav-item .dd {
+  z-index: 1100 !important;
+}
+/* Leaflet contained */
+.leaflet-pane { z-index: 400 !important; }
+.leaflet-control { z-index: 800 !important; }
+.leaflet-container { z-index: 1 !important; }
+</style>
 </head><body>
 
 <div class="topbar">
@@ -105,7 +122,7 @@ table tr:nth-child(even) td{background:#F9FAFB}
 
 
 
-<section class="block"><div class="container"><h2>Process overview</h2><div>There is a marked difference in CPT response between the dense lodgement till found in south Dublin suburbs like Sandyford and the softer, normally consolidated silts encountered in the Docklands and Ringsend areas. In Sandyford, cone resistance typically exceeds 15 MPa within the first few metres, allowing shallow foundations with minimal settlement. Down along the quays, however, tip resistance often stays below 2 MPa for the first 10 to 12 metres, which forces deep foundation solutions or ground improvement. Our field crews use a 20-tonne CPT truck with continuous hydraulic pushing, and we can reach refusal depths of up to 25 metres in the till before the cone encounters rock. When the client needs to verify the shear strength parameters derived from the CPT, we recommend a <a href="/triaxial/">triaxial test</a> on undisturbed samples taken from a companion borehole. For granular layers where sampling is impossible, the pore pressure dissipation tests we run during the CPT session give us a direct measurement of the coefficient of consolidation, a parameter that controls the rate of settlement under embankment loads. In industrial estates near the M50, where historical fill overlies natural deposits, the friction ratio from the CPT helps us distinguish between made ground and natural soils, something a standard SPT cannot do with the same resolution. We have also found that running a <a href="/masw/">MASW survey</a> alongside the CPT in the deeper Liffey valley provides the shear wave velocity profile needed for seismic site classification according to Eurocode 8.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><img src="/img/ensayo-cpt-2.webp" alt="CPT Testing Dublin | Cone Penetration Test for Irish Soil Conditions" loading="lazy" style="width:100%;max-height:210px;object-fit:cover;display:block"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Dublin</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Local context</h2><p>Dublin's population surpassed 1.2 million in the 2022 census, and with the city expanding onto brownfield sites along the Tolka Valley and the Poolbeg peninsula, the risk of encountering undocumented fill and soft estuarine deposits has never been higher. We have seen projects where a desk study suggested competent gravels, but the first CPT sounding revealed 8 metres of very soft clay with an undrained shear strength below 15 kPa — a condition that would cause bearing failure under a conventional strip footing. The economic impact of redesigning foundations after construction has started can run into tens of thousands of euro, and the delay in programme is often worse. For this reason, the <a href="/liquefaction/">liquefaction assessment</a> based on CPT data is becoming a standard requirement for sites near the reclaimed lands of Dublin Bay, where loose saturated sands are susceptible to cyclic mobility even at the moderate seismicity levels assigned to eastern Ireland under Eurocode 8. Our CPT rigs can deploy on sites with limited access, including back gardens and basement excavations, which means you can get the subsurface information before committing to a land purchase.</p></div></section>
+<section class="block"><div class="container"><h2>Process overview</h2><div>There is a marked difference in CPT response between the dense lodgement till found in south Dublin suburbs like Sandyford and the softer, normally consolidated silts encountered in the Docklands and Ringsend areas. In Sandyford, cone resistance typically exceeds 15 MPa within the first few metres, allowing shallow foundations with minimal settlement. Down along the quays, however, tip resistance often stays below 2 MPa for the first 10 to 12 metres, which forces deep foundation solutions or Improvement. Our field crews use a 20-tonne CPT truck with continuous hydraulic pushing, and we can reach refusal depths of up to 25 metres in the till before the cone encounters rock. When the client needs to verify the shear strength parameters derived from the CPT, we recommend a <a href="/triaxial/">triaxial test</a> on undisturbed samples taken from a companion borehole. For granular layers where sampling is impossible, the pore pressure dissipation tests we run during the CPT session give us a direct measurement of the coefficient of consolidation, a parameter that controls the rate of settlement under embankment loads. In industrial estates near the M50, where historical fill overlies natural deposits, the friction ratio from the CPT helps us distinguish between made ground and natural soils, something a standard SPT cannot do with the same resolution. We have also found that running a <a href="/masw/">MASW survey</a> alongside the CPT in the deeper Liffey valley provides the shear wave velocity profile needed for seismic site classification according to Eurocode 8.</div></div></section><section class="block" style="padding:1.5rem 2rem"><div class="container" style="max-width:60%;margin:0 auto"><figure style="margin:0;border-radius:10px;overflow:hidden;border:1px solid #E5E7EB"><img src="/img/ensayo-cpt-2.webp" alt="CPT Testing Dublin | Cone Penetration Test for Irish Soil Conditions" loading="lazy" style="width:100%;max-height:210px;object-fit:cover;display:block"><figcaption style="padding:.5rem .8rem;font-size:.78rem;color:#64748B;background:#FAFAF7">Technical reference — Dublin</figcaption></figure></div></section><section class="block tint"><div class="container"><h2>Local context</h2><p>Dublin's population surpassed 1.2 million in the 2022 census, and with the city expanding onto brownfield sites along the Tolka Valley and the Poolbeg peninsula, the risk of encountering undocumented fill and soft estuarine deposits has never been higher. We have seen projects where a desk study suggested competent gravels, but the first CPT sounding revealed 8 metres of very soft clay with an undrained shear strength below 15 kPa — a condition that would cause bearing failure under a conventional strip footing. The economic impact of redesigning foundations after construction has started can run into tens of thousands of euro, and the delay in programme is often worse. For this reason, the <a href="/liquefaction/">liquefaction assessment</a> based on CPT data is becoming a standard requirement for sites near the reclaimed lands of Dublin Bay, where loose saturated sands are susceptible to cyclic mobility even at the moderate seismicity levels assigned to eastern Ireland under Eurocode 8. Our CPT rigs can deploy on sites with limited access, including back gardens and basement excavations, which means you can get the subsurface information before committing to a land purchase.</p></div></section>
     <section class="block mid-cta-0e0e-0e0e" style="padding:2rem 0">
       <div style="max-width:720px;margin:0 auto;background:linear-gradient(135deg,#EA580C15,#EA580C08);border-left:4px solid #EA580C;padding:1.6rem 1.8rem;border-radius:8px;text-align:center">
         <h3 style="margin:0 0 .4rem;font-size:1.15rem;color:#1E293B;text-align:center">Need a geotechnical assessment?</h3>
@@ -133,12 +150,13 @@ table tr:nth-child(even) td{background:#F9FAFB}
         <link rel="stylesheet" href="/css/leaflet-0e0e.css">
         <script src="/js/leaflet-0e0e.js"></script>
         <script>
-        (function(){
+
+(function(){
           var m=L.map("map_a877e6",{zoomControl:true,attributionControl:true}).setView([53.3494,-6.2606],11);
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
           }).addTo(m);
-          L.marker([53.3494,-6.2606]).addTo(m).bindPopup("Dublin");
+          L.marker([53.3494,-6.2606],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(m).bindPopup("Dublin");
         })();
         </script>
         <div style="margin-top:.5rem;font-size:.78rem;color:#888;text-align:center">

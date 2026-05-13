@@ -75,7 +75,24 @@ table tr:nth-child(even) td{background:#F9FAFB}
   
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"inLanguage":"en","@id":"https://dublin.geotechnical-engineering.co/foundations/","name":"Foundations in Dublin – Ireland","url":"https://dublin.geotechnical-engineering.co/foundations/","isPartOf":{"@id":"https://dublin.geotechnical-engineering.co/#website","url":"https://dublin.geotechnical-engineering.co","@type":"WebSite"},"@type":"WebPage","description":"Dublin’s foundation engineering is shaped by the city’s complex glacial till and alluvial deposits, demanding designs that respond to variable bearing capa"},{"itemListElement":[{"name":"Home","position":1,"item":"https://dublin.geotechnical-engineering.co/","@type":"ListItem"},{"name":"Foundations","position":2,"item":"https://dublin.geotechnical-engineering.co/foundations/","@type":"ListItem"}],"@type":"BreadcrumbList"},{"name":"Foundations","itemListElement":[{"name":"Piles","position":1,"url":"https://dublin.geotechnical-engineering.co/piles/","@type":"ListItem"},{"name":"Footings","position":2,"url":"https://dublin.geotechnical-engineering.co/footings/","@type":"ListItem"},{"name":"Mat Foundations","position":3,"url":"https://dublin.geotechnical-engineering.co/mat-foundations/","@type":"ListItem"}],"@type":"ItemList"}]}</script></head><body>
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"inLanguage":"en","@id":"https://dublin.geotechnical-engineering.co/foundations/","name":"Foundations in Dublin – Ireland","url":"https://dublin.geotechnical-engineering.co/foundations/","isPartOf":{"@id":"https://dublin.geotechnical-engineering.co/#website","url":"https://dublin.geotechnical-engineering.co","@type":"WebSite"},"@type":"WebPage","description":"Dublin’s foundation engineering is shaped by the city’s complex glacial till and alluvial deposits, demanding designs that respond to variable bearing capa"},{"itemListElement":[{"name":"Home","position":1,"item":"https://dublin.geotechnical-engineering.co/","@type":"ListItem"},{"name":"Foundations","position":2,"item":"https://dublin.geotechnical-engineering.co/foundations/","@type":"ListItem"}],"@type":"BreadcrumbList"},{"name":"Foundations","itemListElement":[{"name":"Piles","position":1,"url":"https://dublin.geotechnical-engineering.co/piles/","@type":"ListItem"},{"name":"Footings","position":2,"url":"https://dublin.geotechnical-engineering.co/footings/","@type":"ListItem"},{"name":"Mat Foundations","position":3,"url":"https://dublin.geotechnical-engineering.co/mat-foundations/","@type":"ListItem"}],"@type":"ItemList"}]}</script><style id="minimal-fix-v5">
+/* Sticky para navbar específicos (NO header.hero) */
+.topbar, .navbar, .header-top, .main-header {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1010 !important;
+}
+header.hero, .hero { position: relative !important; }
+/* Dropdowns por encima del hero */
+.dd, .has-dd .dd, .nav-item .dd {
+  z-index: 1100 !important;
+}
+/* Leaflet contained */
+.leaflet-pane { z-index: 400 !important; }
+.leaflet-control { z-index: 800 !important; }
+.leaflet-container { z-index: 1 !important; }
+</style>
+</head><body>
 
 <div class="topbar">
     <div class="logo-area">
@@ -94,7 +111,7 @@ table tr:nth-child(even) td{background:#F9FAFB}
     <a class="hero-cta" href="#main-content">LEARN MORE</a>
 </div></header>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
-<img src="/img/pilotes-1.webp" alt="Foundations in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+
 <p>In Dublin, a robust foundation system must contend with the region’s complex glacial geology, predominantly comprising stiff Dublin boulder clay overlying limestone bedrock. This page provides a comprehensive technical overview of foundation engineering, covering site investigation requirements, structural load analysis, and the design of sub-structures to resist both vertical and lateral forces. The design process must strictly adhere to Irish Building Regulations, specifically Technical Guidance Document A (Structure), and the mandates of the NSAI, with IS EN 1997-1 (Eurocode 7: Geotechnical design) serving as the primary design standard. Selecting the correct system is critical, whether it involves deep <a href="/piles/" title="Pile foundations in Dublin">piles</a> to reach competent strata or robust <a href="/footings/" title="Concrete footings for Dublin sites">footings</a> for bearing directly on the stiff clay.</p>
 <p>Our geotechnical methodology begins with a desk study and a ground investigation compliant with IS EN 1997-2, typically employing a combination of cable percussive boreholes, rotary coring, and standard penetration tests to determine the soil’s undrained shear strength and consolidation characteristics. For bearing capacity calculations, the prescriptive method in Annex D of IS EN 1997-1 is often applied, alongside bearing resistance formulations from the National Annex for the UK and Ireland (NA to IS EN 1997-1). The design of <a href="/piles/" title="Pile design and installation in Ireland">piles</a> is validated using static load test procedures defined by the Institution of Civil Engineers (ICE) Specification for Piling and Embedded Retaining Walls, ensuring shaft friction and end-bearing resistance in the boulder clay are accurately quantified. For shallow systems, we design <a href="/footings/" title="Reinforced concrete footings design">footings</a> with strict settlement analysis to prevent differential movement, a critical factor in Dublin’s variable drift deposits.</p>
 <p>Typical Dublin projects highlight the necessity of tailored foundation strategies, from historic Georgian terrace restorations on shallow strip footings to large-scale commercial developments requiring substantial <a href="/mat-foundations/" title="Mat and raft foundation solutions">mat foundations</a>. Deep basement excavations in the city centre, particularly near the Docklands, frequently necessitate contiguous or secant piled walls to manage earth and groundwater pressures in the boulder clay. Residential schemes in suburban areas like Sandyford often employ ground-bearing floor slabs with edge thickening, while infrastructure projects on alluvial deposits near the River Liffey rely on driven precast concrete piles to bypass soft silts and achieve a set on the underlying limestone bedrock, mitigating long-term consolidation risks.</p>
@@ -129,12 +146,13 @@ table tr:nth-child(even) td{background:#F9FAFB}
         <link rel="stylesheet" href="/css/leaflet-0e0e.css">
         <script src="/js/leaflet-0e0e.js"></script>
         <script>
-        (function(){
+
+(function(){
           var m=L.map("map_a877e6",{zoomControl:true,attributionControl:true}).setView([53.3494,-6.2606],11);
           L.tileLayer("https://{s}.basemaps.cartocdn.com/rastertiles/voyager/{z}/{x}/{y}@2x.png",{
             attribution:"&copy; OpenStreetMap contributors &copy; CARTO",maxZoom:19,subdomains:"abcd"
           }).addTo(m);
-          L.marker([53.3494,-6.2606]).addTo(m).bindPopup("Dublin");
+          L.marker([53.3494,-6.2606],{icon:L.icon({iconUrl:'/css/images/marker-icon.png',iconRetinaUrl:'/css/images/marker-icon-2x.png',shadowUrl:'/css/images/marker-shadow.png',iconSize:[25,41],iconAnchor:[12,41],popupAnchor:[1,-34],shadowSize:[41,41]})}).addTo(m).bindPopup("Dublin");
         })();
         </script>
         <div style="margin-top:.5rem;font-size:.78rem;color:#888;text-align:center">
