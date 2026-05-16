@@ -151,6 +151,39 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
 <style id="nav-arrow-no-box">
 .nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
 </style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
+</style>
 </head><body>
 
 <div class="topbar">
@@ -159,8 +192,7 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
     </div>
     <div class="nav">
         
-        <a class="nav-contact-btn" href="/contact/">TALK TO US</a>
-    </div>
+        </div>
 </div>
 
 <header class="hero"><div class="hero-inner">
@@ -171,11 +203,11 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
 </div></header>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
 
+
+<img src="/img/pilotes-1.webp" alt="Foundations in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>In Dublin, a robust foundation system must contend with the region’s complex glacial geology, predominantly comprising stiff Dublin boulder clay overlying limestone bedrock. This page provides a comprehensive technical overview of foundation engineering, covering site investigation requirements, structural load analysis, and the design of sub-structures to resist both vertical and lateral forces. The design process must strictly adhere to Irish Building Regulations, specifically Technical Guidance Document A (Structure), and the mandates of the NSAI, with IS EN 1997-1 (Eurocode 7: Geotechnical design) serving as the primary design standard. Selecting the correct system is critical, whether it involves deep <a href="/piles/" title="Pile foundations in Dublin">piles</a> to reach competent strata or robust <a href="/footings/" title="Concrete footings for Dublin sites">footings</a> for bearing directly on the stiff clay.</p>
 <p>Our geotechnical methodology begins with a desk study and a ground investigation compliant with IS EN 1997-2, typically employing a combination of cable percussive boreholes, rotary coring, and standard penetration tests to determine the soil’s undrained shear strength and consolidation characteristics. For bearing capacity calculations, the prescriptive method in Annex D of IS EN 1997-1 is often applied, alongside bearing resistance formulations from the National Annex for the UK and Ireland (NA to IS EN 1997-1). The design of <a href="/piles/" title="Pile design and installation in Ireland">piles</a> is validated using static load test procedures defined by the Institution of Civil Engineers (ICE) Specification for Piling and Embedded Retaining Walls, ensuring shaft friction and end-bearing resistance in the boulder clay are accurately quantified. For shallow systems, we design <a href="/footings/" title="Reinforced concrete footings design">footings</a> with strict settlement analysis to prevent differential movement, a critical factor in Dublin’s variable drift deposits.</p>
 <p>Typical Dublin projects highlight the necessity of tailored foundation strategies, from historic Georgian terrace restorations on shallow strip footings to large-scale commercial developments requiring substantial <a href="/mat-foundations/" title="Mat and raft foundation solutions">mat foundations</a>. Deep basement excavations in the city centre, particularly near the Docklands, frequently necessitate contiguous or secant piled walls to manage earth and groundwater pressures in the boulder clay. Residential schemes in suburban areas like Sandyford often employ ground-bearing floor slabs with edge thickening, while infrastructure projects on alluvial deposits near the River Liffey rely on driven precast concrete piles to bypass soft silts and achieve a set on the underlying limestone bedrock, mitigating long-term consolidation risks.</p>
-<img src="/img/pilotes-1.webp" alt="Foundations in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
-
 <p>Our process delivers a full suite of design deliverables, including a Geotechnical Design Report establishing the characteristic soil values and a detailed construction specification with reinforcement schedules for all foundation elements. The core value proposition lies in de-risking the substructure phase through a rigorous interpretation of the ground model, ensuring the selected <a href="/mat-foundations/" title="Raft and mat foundation engineering">mat foundations</a> or <a href="/piles/" title="Expert piling services in Dublin">piles</a> are not only code-compliant but also optimised for the specific site constraints, preventing costly over-design and construction delays. This technical assurance provides a foundation system that delivers long-term structural integrity within the regulatory framework defined by the Building Control (Amendment) Regulations.</p></div></section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../piles/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Piles</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../footings/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Footings</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../mat-foundations/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Mat Foundations</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>
 <section class="block mid-cta-0e0e-0e0e" style="padding:2rem 0">

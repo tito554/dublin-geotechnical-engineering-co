@@ -151,6 +151,39 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
 <style id="nav-arrow-no-box">
 .nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
 </style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
+</style>
 </head><body>
 
 <div class="topbar">
@@ -159,8 +192,7 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
     </div>
     <div class="nav">
         
-        <a class="nav-contact-btn" href="/contact/">TALK TO US</a>
-    </div>
+        </div>
 </div>
 
 <header class="hero"><div class="hero-inner">
@@ -170,11 +202,11 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
     <a class="hero-cta" href="#main-content">LEARN MORE</a>
 </div></header>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
-<img src="/img/ensayo-cbr-3.webp" alt="Road Geotechnics in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/pavimento-flexible-1.webp" alt="Road Geotechnics in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>Road geotechnics in Dublin addresses the full lifecycle of pavement performance, from subgrade characterisation to final wearing course behaviour, within a geological setting dominated by glacial tills, alluvium, and occasional karst-influenced limestone bedrock. Local compliance is framed by the TII (Transport Infrastructure Ireland) Publication Series, notably TII CC-SPW-01200 for earthworks and TII CC-SPW-00900 for pavement design, which align with the I.S. EN 16907 series for earthworks classification. A robust <a href="/cbr-road/">CBR road study</a> is typically the first technical milestone, quantifying the bearing capacity of the natural subgrade and its sensitivity to moisture variation, which is critical given Dublin’s temperate maritime rainfall regime. For heavily trafficked urban corridors, the design often transitions from empirical CBR-based methods to mechanistic-empirical analysis, supporting the specification of a <a href="/rigid-pavement/">rigid pavement</a> where long-term durability and reduced maintenance interventions are required under bus and HGV loading.</p>
 <p>Site investigation methodology follows TII CF-GEN-01007 and the relevant parts of the NRA Design Manual for Roads and Bridges, employing a phased approach of dynamic probing, trial pitting, and rotary coring to establish the ground model. Laboratory testing programmes are structured around I.S. EN ISO 17892 for classification, compaction, and shear strength, with a mandatory focus on California Bearing Ratio determination at target moisture contents and densities to inform the pavement foundation design. The interpretation of these data feeds directly into the design of <a href="/flexible-pavement/">flexible pavement</a> layers, where the capping and sub-base must satisfy TII Clause 804 and 805 material specifications, and the asphalt layers are designed in accordance with I.S. EN 13108 and TII CC-SPW-00900. The interaction between the pavement structure and the underlying Dublin Boulder Clay is modelled using linear elastic or finite element methods to predict critical strains at formation level and within the bituminous bound layers, ensuring that both rutting and fatigue criteria are satisfied for the 20-year design life.</p>
 <p>Typical Dublin projects range from greenfield residential distributor roads on low-strength alluvial deposits in areas like the Park West development, where deep soil mixing or geogrid-reinforced granular platforms become necessary, to the rehabilitation of historic radial routes such as the N81, where full-depth reclamation is assessed against cold in-situ recycling. A detailed <a href="/cbr-road/">CBR road study</a> on the existing pavement foundation often reveals significant variability in stiffness, driving the need for targeted subgrade stabilisation with lime or cement to achieve a uniform platform modulus. On bus corridor schemes under the BusConnects programme, the geotechnical assessment must also consider the impact of utility trench backfill settlement on pavement surface regularity, requiring strict compaction control and often a reversion to a <a href="/rigid-pavement/">rigid pavement</a> design at bus stops and junctions to resist channelised loading and fuel spill degradation.</p>
-<img src="/img/ensayo-cpt-2.webp" alt="Road Geotechnics in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/ensayo-spt-4.webp" alt="Road Geotechnics in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 
 <p>The process moves from a Phase 1 desk study and walkover to an intrusive ground investigation, followed by a Geotechnical Design Report that integrates the factual data with an interpretive pavement foundation class assessment. Deliverables include a comprehensive Ground Investigation Report, a Pavement Design Report with layer thicknesses and material specifications, and construction-phase earthworks verification testing schedules. This integrated road geotechnics approach reduces the risk of premature structural deterioration, limits whole-life costs through optimised layer design, and ensures full traceability with TII and local authority adoption requirements, ultimately delivering a <a href="/flexible-pavement/">flexible pavement</a> or rigid solution that performs reliably under Dublin’s specific traffic and climatic loads.</p></div></section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../flexible-pavement/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Flexible Pavement</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../rigid-pavement/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Rigid Pavement</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../cbr-road/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">CBR Road Study</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>

@@ -151,6 +151,39 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
 <style id="nav-arrow-no-box">
 .nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
 </style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
+</style>
 </head><body>
 
 <div class="topbar">
@@ -159,8 +192,7 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
     </div>
     <div class="nav">
         
-        <a class="nav-contact-btn" href="/contact/">TALK TO US</a>
-    </div>
+        </div>
 </div>
 
 <header class="hero"><div class="hero-inner">
@@ -170,11 +202,11 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
     <a class="hero-cta" href="#main-content">LEARN MORE</a>
 </div></header>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
-<img src="/img/tomografia-sismica-5.webp" alt="Seismic in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/aislacion-sismica-1.webp" alt="Seismic in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>Seismic engineering in Dublin addresses the assessment and mitigation of earthquake effects on structures and ground, despite Ireland's low-to-moderate seismicity. The region’s geological framework, characterised by glacial tills, alluvial deposits, and the underlying Carboniferous limestone of the Dublin Basin, plays a critical role in local seismic response. Irish seismic design is governed by the National Annex to Eurocode 8 (I.S. EN 1998-1), which incorporates the national seismic hazard map and site classification parameters derived from Geological Survey Ireland data. Our services encompass detailed site investigations and advanced numerical modelling, including <a href="/seismic-microzonation/">seismic microzonation</a> to map ground motion variability across urban areas, and rigorous assessment of <a href="/liquefaction/">liquefaction</a> potential in saturated granular soils.</p>
 <p>Our methodology aligns with the standards established by the NSAI, employing probabilistic seismic hazard analysis (PSHA) and site-specific response analysis using software such as DEEPSOIL and PLAXIS. Following I.S. EN 1998-1 and the guidance of the Irish National Annex, we define elastic response spectra for Type 1 and Type 2 seismic actions, accounting for the reference peak ground acceleration (a<sub>gR</sub>) of 0.04g to 0.08g typical for the Dublin region. For critical infrastructure and complex ground conditions, we implement non-linear effective stress models to capture strain-dependent soil behaviour. Where protection of sensitive structures is required, we integrate <a href="/seismic-isolation/">seismic isolation</a> strategies, designing base isolation systems in accordance with EN 15129 to decouple superstructures from ground motion.</p>
 <p>Typical projects in Dublin involve the seismic design and retrofit of bridges, data centres, and multi-storey residential developments on reclaimed lands or deep soft soil deposits. The presence of estuarine silts and made ground along the River Liffey quays and in the Docklands often necessitates detailed <a href="/liquefaction/">liquefaction</a> assessments using in-situ CPT and SPT data, evaluating factors of safety against cyclic softening and flow failure. For large-scale masterplans, such as those in the Poolbeg or Cherrywood areas, we develop comprehensive <a href="/seismic-microzonation/">seismic microzonation</a> studies to inform land-use planning and foundation design, ensuring compliance with Dublin City Council’s development plan requirements for geotechnical risk management.</p>
-<img src="/img/aislacion-sismica-1.webp" alt="Seismic in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/tomografia-sismica-1.webp" alt="Seismic in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 
 <p>Our process delivers a clear, actionable sequence from desk study and field investigation to final reporting. We provide interpretative geotechnical reports with seismic design parameters, time histories, and liquefaction resistance curves. Deliverables include Site-Specific Seismic Hazard Reports, Soil-Structure Interaction Analyses, and detailed design of Improvement or <a href="/seismic-isolation/">seismic isolation</a> systems. The value we offer is the rigorous quantification of seismic risk and the delivery of Eurocode-compliant, cost-optimised design solutions that safeguard structural integrity and ensure regulatory approval for developments across Dublin.</p></div></section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../liquefaction/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Liquefaction</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../seismic-microzonation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Seismic Microzonation</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../seismic-isolation/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Seismic Isolation</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>

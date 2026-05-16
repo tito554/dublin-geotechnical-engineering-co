@@ -151,6 +151,39 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
 <style id="nav-arrow-no-box">
 .nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
 </style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
+</style>
 </head><body>
 
 <div class="topbar">
@@ -159,8 +192,7 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
     </div>
     <div class="nav">
         
-        <a class="nav-contact-btn" href="/contact/">TALK TO US</a>
-    </div>
+        </div>
 </div>
 
 <header class="hero"><div class="hero-inner">
@@ -170,11 +202,11 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
     <a class="hero-cta" href="#main-content">LEARN MORE</a>
 </div></header>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
-<img src="/img/ensayo-proctor-1.webp" alt="Investigation in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/calicatas-exploratorias-1.webp" alt="Investigation in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>Ground investigation in Dublin is the essential first stage of any construction or civil engineering project, designed to characterise subsurface conditions and mitigate ground-related risk. The city’s geology is dominated by glacial tills overlying Carboniferous limestone and shale bedrock, with frequent transitions between stiff boulder clay and weathered rock, particularly along the coastal belt and river valleys. Compliance with the Irish National Annex to Eurocode 7, including I.S. EN 1997-2:2007, and the requirements of the Building Control (Amendment) Regulations 2014 are mandatory for all site investigations. In practice, this means designing a phased investigation that combines techniques such as <a href="/spt-drilling/">SPT Drilling</a> and <a href="/cpt-test/">CPT Test</a> to deliver the geotechnical parameters required for foundation design and earthworks assessment.</p>
 <p>Methodology in Ireland follows the guidance set out in the Institution of Engineers of Ireland’s *Specification for Ground Investigation* and the UK’s BS 5930, which remains the primary procedural standard adopted locally. Boreholes are typically advanced using cable percussion or rotary drilling rigs, with Standard Penetration Tests performed at regular intervals in accordance with I.S. EN ISO 22476-3. Where stratigraphic continuity and rapid in-situ profiling are required, static Cone Penetration Tests (CPTu) provide near-continuous data on soil behaviour type, undrained shear strength, and pore pressure response—particularly valuable in Dublin’s soft alluvial deposits and made ground. Supplementary <a href="/test-pits/">Test Pits</a> are frequently employed at shallow depth to expose fill materials, verify buried service corridors, and allow undisturbed sampling of cohesive soils. All fieldwork is supervised by a chartered geotechnical engineer, with laboratory testing conducted at INAB-accredited facilities to comply with IS EN ISO 17892 standards.</p>
 <p>In Dublin, ground investigation programmes are shaped by the city’s dense urban fabric and its specific development pressures. Typical projects include medium- to high-rise residential schemes on former industrial lands in the docklands, where deep soft estuarine deposits necessitate careful assessment of settlement and pile capacity, and infrastructure upgrades such as the BusConnects corridors and Irish Water drainage projects, where linear investigations must navigate existing utilities and constrained access. For these applications, <a href="/cpt-test/">CPT Test</a> arrays are often deployed to map compressible layers beneath proposed embankments or heavily loaded floor slabs, while targeted SPT boreholes provide the necessary information for retaining wall and deep foundation design in the glacial till.</p>
-<img src="/img/ensayo-triaxial-5.webp" alt="Investigation in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/ensayo-spt-4.webp" alt="Investigation in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 
 <p>The investigation process begins with a desk study and walkover survey, followed by mobilisation of track-mounted or restricted-access rigs suited to Dublin’s often tight city-centre sites. Fieldwork is executed under strict health and safety protocols aligned with the Safety, Health and Welfare at Work (Construction) Regulations 2013. Upon completion, the client receives a comprehensive Ground Investigation Report including factual logs, laboratory test results, and a geotechnical interpretive section that delivers characteristic ground parameters, foundation recommendations, and a contamination screening assessment where required. The result is a defensible, code-compliant ground model that enables structural engineers and architects to proceed with confidence, reducing the risk of unforeseen ground conditions and programme overruns.</p></div></section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../spt-drilling/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">SPT Drilling</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../cpt-test/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">CPT Test</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../test-pits/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Test Pits</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>

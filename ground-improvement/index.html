@@ -151,6 +151,39 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
 <style id="nav-arrow-no-box">
 .nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
 </style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
+</style>
 </head><body>
 
 <div class="topbar">
@@ -159,8 +192,7 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
     </div>
     <div class="nav">
         
-        <a class="nav-contact-btn" href="/contact/">TALK TO US</a>
-    </div>
+        </div>
 </div>
 
 <header class="hero"><div class="hero-inner">
@@ -171,11 +203,11 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
 </div></header>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
 
+
+<img src="/img/vibrocompactacion-1.webp" alt="Improvement in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>Improvement in Dublin addresses the engineering challenges posed by the region's complex glacial and post-glacial geology, where soft alluvial silts, peats, and loose sands frequently underlie urban and industrial development sites. The overarching goal of these techniques is to enhance bearing capacity, mitigate total and differential settlement, and remediate liquefaction potential in granular soils, ensuring compliance with the stringent performance criteria of Eurocode 7 and the Irish National Annex, as reinforced by the Institution of Engineers of Ireland. Our specialist services encompass targeted solutions such as <a href="/grouting/">permeation and compaction grouting</a> for fine-grained soils and <a href="/vibrocompaction/">deep vibrocompaction</a> for granular deposits, each selected based on a rigorous site-specific ground model derived from comprehensive site investigations conforming to IS EN 1997-2.</p>
 <p>The methodological framework for any Improvement project in Ireland is governed by a design-based approach that integrates field testing with execution standards detailed in BS EN 14731 for deep vibration and BS EN 12715 for grouting operations. For problematic, compressible cohesive soils and mixed fills prevalent in the Dublin basin, the installation of <a href="/stone-columns/">vibro-replacement stone columns</a> is a primary solution, constructing stiff, high-modulus inclusions that composite with the native soil to support conventional shallow foundations. This technique is meticulously validated through pre- and post-treatment In-Situ, including Cone Penetration Tests (CPT) and load tests, to confirm the achieved undrained shear strength and stiffness parameters meet the specified design values in accordance with the Irish Building Regulations Technical Guidance Document A.</p>
 <p>Typical applications across the Dublin metropolitan area involve the enabling of critical infrastructure and commercial developments on marginal lands, such as the docklands reclamations and industrial estates in Park West. A characteristic project involves the deployment of <a href="/vibrocompaction/">vibrocompaction</a> to densify loose hydraulic and estuarine sands beneath proposed warehouse slabs, effectively eliminating the risk of seismic-induced liquefaction as per the hazard mapping for eastern Ireland. Similarly, the construction of multi-storey residential blocks over deep deposits of soft, lacustrine clay is routinely facilitated by the installation of <a href="/stone-columns/">stone columns</a>, which transfer structural loads through the weak stratum to a competent bearing layer, preventing excessive settlement that would compromise serviceability.</p>
-<img src="/img/vibrocompactacion-1.webp" alt="Improvement in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
-
 <p>Our process commences with a constructability review of the ground investigation data, leading to a detailed method statement and a comprehensive site-specific trial to calibrate installation parameters and confirm performance targets. The primary deliverable is a technically verified, improved ground mass with certified design parameters, accompanied by a full quality control record of installation logs and post-treatment verification test results, providing a robust, risk-mitigated foundation solution. By combining deep local geological knowledge with specialist execution, we provide a value-engineered alternative to deep piling, consistently delivering a programme-certain and cost-effective foundation strategy that accelerates site readiness for principal contractors and developers in the competitive Dublin construction market.</p></div></section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../grouting/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Grouting</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../vibrocompaction/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Vibrocompaction</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../stone-columns/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Stone Columns</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>
 <section class="block mid-cta-0e0e-0e0e" style="padding:2rem 0">

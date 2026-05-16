@@ -151,6 +151,39 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
 <style id="nav-arrow-no-box">
 .nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
 </style>
+<style id="post-fixes-v2">
+/* Inline links visibles en prosa */
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn){color:var(--accent,#1d4ed8) !important;text-decoration:underline !important;text-decoration-color:rgba(29,78,216,.45);text-underline-offset:2px;font-weight:600}
+p a[href^="/"]:not(.cta-btn):not(.hero-cta):not(.nav-contact-btn):hover{text-decoration-color:currentColor;opacity:.85}
+/* Sidebar hover adaptive */
+aside .cat-name:hover,aside .sb-home:hover,aside .cat-sub-wrap a:hover,
+aside nav a:hover{color:inherit !important;text-decoration:underline !important;text-underline-offset:3px}
+aside .cat-name,aside .sb-home,aside nav a{color:inherit}
+aside .cat-name:hover,aside .sb-home:hover{background:rgba(127,127,127,.12) !important}
+/* Cat-toggle sin caja */
+.cat-toggle{width:auto !important;min-width:32px;border:none !important;border-left:none !important;background:transparent !important;box-shadow:none !important;padding:.3rem .5rem !important}
+.cat-toggle:hover{background:rgba(127,127,127,.12) !important}
+/* Nav-arrow sin caja */
+.nav-arrow,.nav-arrow:hover,.nav-arrow:focus{background:transparent !important;border:none !important;outline:none !important;padding:0 .15rem !important;color:inherit !important;cursor:pointer !important;box-shadow:none !important}
+/* Navbar compacto */
+.navbar{padding:.65rem 1rem !important}
+.navbar .nav{gap:.55rem !important}
+.nav-item{font-size:.74rem !important;letter-spacing:.01em !important}
+.logo-box,.brand-name,.brand{font-size:.82rem !important}
+/* Layout defensive */
+body{overflow-x:clip;max-width:100vw}
+body>*{max-width:100vw}
+</style>
+<style id="nav-fix-v3">
+nav.navbar, header nav, .nav-bar, .top-nav { font-size: 1rem !important; }
+nav.navbar a, header nav a, .nav-bar a, .top-nav a, .nav-cat-link, .nav-item a { font-size: 1rem !important; color: #FFFFFF !important; font-weight: 500 !important; }
+nav.navbar a:hover, header nav a:hover, .nav-cat-link:hover { color: #FCD34D !important; text-decoration: underline; }
+nav[aria-label="breadcrumb"], .crumb, .breadcrumb { color: rgba(255,255,255,.85) !important; font-size: .82rem !important; }
+nav[aria-label="breadcrumb"] a, .crumb a, .breadcrumb a { color: #FFFFFF !important; text-decoration: underline; font-weight: 600; }
+nav[aria-label="breadcrumb"] a:hover, .crumb a:hover { color: #FCD34D !important; }
+.crumb a[href="/"], .breadcrumb a[href="/"], a.home-link { color: #FFFFFF !important; }
+.brand-name, .logo-text, .main, .brand { color: #FFFFFF !important; }
+</style>
 </head><body>
 
 <div class="topbar">
@@ -159,8 +192,7 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
     </div>
     <div class="nav">
         
-        <a class="nav-contact-btn" href="/contact/">TALK TO US</a>
-    </div>
+        </div>
 </div>
 
 <header class="hero"><div class="hero-inner">
@@ -170,11 +202,11 @@ aside .cat-sub-wrap a:hover{background:rgba(127,127,127,.08) !important}
     <a class="hero-cta" href="#main-content">LEARN MORE</a>
 </div></header>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto">
-<img src="/img/microzonificacion-sismica-3.webp" alt="Geophysics in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/resistividad-electrica-sev-3.webp" alt="Geophysics in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 <p>In Dublin and the broader Leinster region, geophysical surveying must contend with a complex subsurface environment ranging from glacial tills and fluvio-glacial gravels to the characteristic Calp limestone bedrock. Our geophysics services provide a non-intrusive method for mapping these conditions, essential for compliance with Irish planning regulations and the specific requirements of the <a href="/">Geotechnical Site Investigation</a> process. We apply these techniques to identify karst features, buried utilities, and archaeological remains, directly informing the ground model as required under Eurocode 7 and the guidance of the Institution of Engineers of Ireland. This is critical for de-risking developments on Dublin's notoriously variable boulder clays, as detailed in our <a href="/">Ground Investigation</a> specifications.</p>
 <p>Our methodological approach adheres strictly to Irish and British standards, principally the BS 5930 code of practice for ground investigations and the ISEN 1997-2 standard for field testing. We employ a multi-technique strategy, integrating Ground Penetrating Radar (GPR) and Electrical Resistivity Tomography (ERT) with electromagnetic and magnetic methods. GPR is deployed at high frequencies for utility mapping in accordance with NRA guidelines, while ERT is the primary tool for profiling depth to bedrock and detecting dissolution features within the limestone. This rigorous, calibrated approach ensures that data acquired for projects like <a href="/">Retaining Wall Design</a> meets the traceability and quality benchmarks demanded by consulting engineers and local authorities in Dublin.</p>
 <p>Typical project applications across Dublin city and county demonstrate the versatility of these methods. We are frequently commissioned for pre-construction assessments on commercial developments in the docklands, where we map alluvial deposits and former buried dock structures. For residential schemes in areas like South Dublin, our <a href="/">Soil Sampling & Testing</a> programmes are precisely targeted using geophysical anomalies to pinpoint zones of pyrite-bearing mudstone or infilled quarries. Infrastructure projects, including road widening and flood relief schemes, rely on our surveys to trace the continuity of geological strata without the disruption of extensive trial pitting, providing a contiguous subsurface profile that discrete boreholes alone cannot achieve.</p>
-<img src="/img/microzonificacion-sismica-1.webp" alt="Geophysics in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
+<img src="/img/resistividad-electrica-sev-1.webp" alt="Geophysics in Dublin" loading="lazy" decoding="async" style="width:100%;max-height:220px;object-fit:cover;display:block;border-radius:6px;margin:1.5rem 0">
 
 <p>The process begins with a desktop study of historical maps and geological data, followed by field acquisition and advanced data processing to generate clear 2D sections and 3D models. The key deliverable is a factual and interpretative report containing georeferenced radargrams and resistivity tomograms, directly integrated with the <a href="/">Factual Report & Interpretation</a> for a unified ground model. Our value proposition lies in the intelligent fusion of geophysical data with intrusive investigation results, reducing overall project costs by optimising borehole locations and minimising unforeseen ground conditions. This provides developers and civil engineers in Dublin with a reliable, high-resolution understanding of the subsurface, from street level to bedrock.</p></div></section>
 <section class="block" style="padding:2rem 1.5rem"><div style="max-width:1200px;margin:0 auto"><h2 style="margin-bottom:1.5rem;font-weight:700">Available services</h2><div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1rem"><a href="../masw/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">MASW</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../seismic-refraction/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Seismic Refraction</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a><a href="../resistivity/" style="display:block;padding:1.2rem;border:1px solid #E5E7EB;border-radius:10px;text-decoration:none;color:inherit;background:#FFFFFF;transition:all .2s;box-shadow:0 1px 2px rgba(0,0,0,.04)" onmouseover="this.style.borderColor='#F43F5E';this.style.transform='translateY(-2px)';this.style.boxShadow='0 4px 14px rgba(0,0,0,.08)'" onmouseout="this.style.borderColor='#E5E7EB';this.style.transform='translateY(0)';this.style.boxShadow='0 1px 2px rgba(0,0,0,.04)'"><h3 style="margin:0 0 .4rem;font-size:1.1rem">Resistivity</h3><span style="font-size:.85rem;color:#666">→ Ver detalle</span></a></div></div></section>
